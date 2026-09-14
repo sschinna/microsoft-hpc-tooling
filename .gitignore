@@ -1,26 +1,40 @@
-# Python cache
+# ── Python cache ──────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
+*.egg-info/
 
-# Logs
+# ── Logs ──────────────────────────────────────────────────────────────────────
 *.log
 
-# OS
+# ── OS ────────────────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 
-# IDE
+# ── IDE ───────────────────────────────────────────────────────────────────────
 .vscode/
 .idea/
 
-# HPC Pack - skip large binary extract (MSI, EXE), keep scripts only
+# ── HPC Pack: exclude large binary files; keep scripts and configs ─────────────
 hpc-pack-client/
+hpc-pack/bin/*.dll
+hpc-pack/bin/*.exe
+hpc-pack/bin/*.EXE
+hpc-pack/bin/*.tlb
+hpc-pack/bin/*.rdlc
+hpc-pack/bin/*.lic
+hpc-pack/bin/*.man
+hpc-pack/bin/*.png
+hpc-pack/bin/*.man
+hpc-pack/bin/en/
+hpc-pack/bin/en-us/
+hpc-pack/bin/ja/
+hpc-pack/bin/ja-jp/
+hpc-pack/bin/zh-CHS/
+hpc-pack/bin/zh-cn/
 
-# CycleCloud raw installer extract (generated, not needed in repo)
+# ── CycleCloud: exclude large Linux tarball (48MB), keep zip installer & wheel
+cyclecloud-dist/cyclecloud-cli-linux-amd64*.tar.gz
 cyclecloud-installer/
 
-# Large distribution binaries (> 40MB - use releases or direct download instead)
-cyclecloud-dist/cyclecloud-cli-linux-amd64*.tar.gz
-
-# Temp
+# ── Temp ──────────────────────────────────────────────────────────────────────
 *.tmp

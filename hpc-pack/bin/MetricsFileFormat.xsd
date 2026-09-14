@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema id="MetricsFileFormat" 
+                  targetNamespace="http://schemas.microsoft.com/HpcMetricsFileFormat/2012/08"
+                  elementFormDefault="qualified"
+                  xmlns="http://schemas.microsoft.com/HpcMetricsFileFormat/2012/08"
+                  xmlns:mstns="http://schemas.microsoft.com/HpcMetricsFileFormat/2012/08"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  blockDefault="#all">
+
+    <xs:element name="Metrics" type="MetricsList" />
+
+  <xs:simpleType name="SampleRate">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Second"/>
+      <xs:enumeration value="Minute"/>
+      <xs:enumeration value="Hour"/>
+      <xs:enumeration value="Day"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StoreRate">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Never"/>
+      <xs:enumeration value="Minute"/>
+      <xs:enumeration value="Hour"/>
+      <xs:enumeration value="Day"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MetricTarget">
+    <xs:list>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Cluster"/>
+          <xs:enumeration value="HeadNode"/>
+          <xs:enumeration value="ComputeNode"/>
+          <xs:enumeration value="BrokerNode"/>
+          <xs:enumeration value="WorkstationNode"/>
+          <xs:enumeration value="AzureNode"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:list>
+  </xs:simpleType>
+
+  <xs:simpleType name="MetricCalculation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AverageAllNodes"/>
+      <xs:enumeration value="SumAllNodes"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MetricRollup">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Average"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="MetricsList">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="PerformanceCounterMetric" type="PerformanceCounterMetric" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="CalculatedMetric" type="CalculatedMetric" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:choice>
+  </xs:complexType>
+
+   <xs:complexType name="MetricType" abstract="true">
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="DisplayName" type="xs:string" use="required"/>
+      <xs:attribute name="SampleRate" type="SampleRate" use="required"/>
+      <xs:attribute name="StoreRate" type="StoreRate" use="required"/>
+      <xs:attribute name="Description" type="xs:string" use="optional"/>
+      <xs:attribute name="Unit" type="xs:string" use="optional"/>
+      <xs:attribute name="MetricTarget" type="MetricTarget" use="required"/>
+      <xs:attribute name="Minimum" type="xs:float" use="optional"/>
+      <xs:attribute name="Maximum" type="xs:float" use="optional"/>
+      <xs:attribute name="Rollup" type="MetricRollup" use="optional"/>
+   </xs:complexType>
+
+  <xs:complexType name="PerformanceCounterMetric">
+    <xs:complexContent>
+      <xs:extension base="MetricType">
+        <xs:attribute name="Category" type="xs:string" use="required"/>
+        <xs:attribute name="Counter" type="xs:string" use="optional"/>
+        <xs:attribute name="Instance" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="CalculatedMetric">
+    <xs:complexContent>
+      <xs:extension base="MetricType">
+        <xs:attribute name="BaseMetric" type="xs:string" use="required"/>
+        <xs:attribute name="CounterInstance" type="xs:string" use="optional"/>
+        <xs:attribute name="Calculation" type="MetricCalculation" use="required"/>
+       </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+</xs:schema>
