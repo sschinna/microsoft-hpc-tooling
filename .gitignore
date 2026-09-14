@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# HPC Pack - skip large binary extract (MSI, EXE), keep scripts only
+hpc-pack-client/
+
+# CycleCloud raw installer extract (generated, not needed in repo)
+cyclecloud-installer/
+
+# Large distribution binaries (> 40MB - use releases or direct download instead)
+cyclecloud-dist/cyclecloud-cli-linux-amd64*.tar.gz
+
+# Temp
+*.tmp

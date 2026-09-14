@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema id="NodeConfigurationFile" 
+                  targetNamespace="http://schemas.microsoft.com/HpcNodeConfigurationFile/2007/12"
+                  elementFormDefault="qualified"
+                  xmlns="http://schemas.microsoft.com/HpcNodeConfigurationFile/2007/12"
+                  xmlns:mstns="http://schemas.microsoft.com/HpcNodeConfigurationFile/2007/12"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Nodes" type="NodeList" />
+
+  <xs:complexType name="NodeList">
+    <xs:sequence>
+      <xs:element name="Node" type="NodeType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MacAddress">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="IPAddress" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:complexType name="NodeType">
+    <xs:sequence >
+      <xs:element name="Location" type="Location" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Template" type="Template" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="MacAddress" type="MacAddress" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Tag" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+     </xs:sequence>
+    <xs:attribute name="Name" type="xs:string" use="required"/>
+    <xs:attribute name="Domain" type="xs:string" use="optional"/>
+    <xs:attribute name="ManagementIpAddress" type="xs:string" use="optional"/>
+    <xs:attribute name="MachineGuid" type="xs:string" use="optional"/>
+    <xs:attribute name="ProductKey" type="xs:string" use="optional"/>
+
+    <!-- Settings for Netboot compute nodes-->
+    <xs:attribute name="InitiatorIqn" type="xs:string" use="optional"/>
+    <xs:attribute name="ClientIqnDhcpOption"  type="xs:int" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="Location">
+    <!-- deprecated members -->
+    <xs:attribute name="DataCenter" type="xs:string" use="optional"/>
+    <xs:attribute name="Rack" type="xs:string" use="optional"/>
+    <xs:attribute name="Chassis" type="xs:string" use="optional"/>
+    
+    <!-- new members -->
+    <xs:attribute name="Primary" type="xs:string" use="optional"/>
+    <xs:attribute name="Secondary" type="xs:string" use="optional"/>
+    <xs:attribute name="Tertiary" type="xs:string" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="Template">
+    <xs:attribute name="Name" type="xs:string" use="required"/>
+    <xs:attribute name="Provisioned" type="xs:boolean" use="optional"/>
+  </xs:complexType>
+  
+</xs:schema>

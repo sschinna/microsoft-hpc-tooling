@@ -1,0 +1,1032 @@
+﻿<Configuration>
+  <ViewDefinitions>
+
+    <View>
+      <Name>HpcJobTemplate</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcJobTemplate</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CreateTime</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ChangeTime</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcJob</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcJob</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>8</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>10</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>12</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>State</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Owner</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Priority</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>NumberOfTasks</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcTask</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcTask</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>8</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>10</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>25</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>State</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CommandLine</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ErrorMessage</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+
+    <View>
+      <Name>HpcNode</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcNode</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>25</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>State</Label>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>25</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>NetBiosName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>HealthState</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>NodeState</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Groups</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcOperation</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcOperation</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>25</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Updated</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>State</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>ChangeLogEntry</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.Management.ChangeLogEntry</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>25</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Message</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TimeCreated</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Severity</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcGroup</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcGroup</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>5</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>25</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>50</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcJobTemplateSecurityDescriptor</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcJobTemplateSecurityDescriptor</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>JobTemplateName</Label>
+                <PropertyName>JobTemplateName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Owner</Label>
+                <PropertyName>Owner</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Group</Label>
+                <PropertyName>Group</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>ACCESS</Label>
+                <ScriptBlock>ForEach ($access in $_.Access) { "`r`n" + $access + " " }</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Audit</Label>
+                <PropertyName>Audit</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Sddl</Label>
+                <PropertyName>Sddl</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+
+    <View>
+      <Name>HpcMetric</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcMetric</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>25</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>8</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>12</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>DisplayName</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>MetricTarget</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Minimum</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Maximum</PropertyName>
+              </TableColumnItem>
+
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcMember</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcMember</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Role</PropertyName>
+              </TableColumnItem>
+
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcNetworkBinding</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcNetworkBinding</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Type</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>IpAddress</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>SubnetMask</PropertyName>
+              </TableColumnItem>
+
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcMetricValue</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcMetricValue</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+
+              <TableColumnItem>
+                <PropertyName>NodeName</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Metric</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Counter</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Value</PropertyName>
+              </TableColumnItem>
+
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcImage</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcImage</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>WimFileName</PropertyName>
+              </TableColumnItem>
+
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcNodeTemplate</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcNodeTemplate</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>30</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>25</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>25</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>AssignedNodes</PropertyName>
+              </TableColumnItem>
+
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcWorkItem</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcWorkItem</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>12</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>21</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>27</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+
+              <TableColumnItem>
+                <PropertyName>IsCompleted</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>CompletedSuccessfully</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Message</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Operations</PropertyName>
+              </TableColumnItem>
+
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcNodeStateHistory</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcNodeStateHistory</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>30</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>10</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+
+              <TableColumnItem>
+                <PropertyName>EventTime</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Event</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>NodeName</PropertyName>
+              </TableColumnItem>
+
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcTestCase</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcTestCase</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+
+          <TableColumnHeader>
+            <Width>13</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>23</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>10</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+
+              <TableColumnItem>
+                <PropertyName>Alias</PropertyName>
+              </TableColumnItem>
+              
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Suite</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Company</PropertyName>
+              </TableColumnItem>
+              
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>HpcTestResult</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcTestResult</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+
+          <TableColumnHeader>
+            <Width>5</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>10</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>50</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>TestName</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Result</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>SubmitTime</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Message</PropertyName>
+              </TableColumnItem>
+
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>DiagnosticParameter</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Hpc.Diagnostics.DiagnosticParameter</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>10</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>10</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Type</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Default Value</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Prompt</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+
+              <TableColumnItem>
+                <PropertyName>Possible Values</PropertyName>
+              </TableColumnItem>
+
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+
+
+    <View>
+      <Name>HpcVariable</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.ComputeCluster.CCPPSH.HpcVariable</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Value</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>
+
+
+<!-- SIG # Begin signature block -->
+<!-- MIIdgwYJKoZIhvcNAQcCoIIddDCCHXACAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB -->
+<!-- gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR -->
+<!-- AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUwomz+OEY5vQ7OCWphE6f9ZzW -->
+<!-- +vigghhfMIIE2jCCA8KgAwIBAgITMwAAAUhJwnxX/bKVqQAAAAABSDANBgkqhkiG -->
+<!-- 9w0BAQUFADB3MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4G -->
+<!-- A1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSEw -->
+<!-- HwYDVQQDExhNaWNyb3NvZnQgVGltZS1TdGFtcCBQQ0EwHhcNMTkxMTEzMjE0MjE3 -->
+<!-- WhcNMjEwMjExMjE0MjE3WjCByjELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hp -->
+<!-- bmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jw -->
+<!-- b3JhdGlvbjElMCMGA1UECxMcTWljcm9zb2Z0IEFtZXJpY2EgT3BlcmF0aW9uczEm -->
+<!-- MCQGA1UECxMdVGhhbGVzIFRTUyBFU046RDJDRC1FMzEwLTRBRjExJTAjBgNVBAMT -->
+<!-- HE1pY3Jvc29mdCBUaW1lLVN0YW1wIFNlcnZpY2UwggEiMA0GCSqGSIb3DQEBAQUA -->
+<!-- A4IBDwAwggEKAoIBAQDbHxMv9YK9ZnFNLAkAbrJI2sR5WsYIzmZ3D+vGVTobNRd2 -->
+<!-- W2xAczusIIy+DrrIctVVcnx7skk3B1XsVxd4/YMAW2gpkEvp2jaED8Z1ul49j8y4 -->
+<!-- iIto8B1ohRpn2WzHq/ErrvEcQM8Jxk0d/JINhhdI8ToY2mB6/TT95yQrKuFKyAKJ -->
+<!-- zpyWh6NoNQdw1RRE+CfnVOqBqEmMdFhMKgub0iAIcdsd+3SZU97xGK1/Z9dtJRXT -->
+<!-- 5WEzthf+60eITMnNuPC9xB9Tnm3v2OOGJVEhLVyVp7lMqOp5/JEHgwkJIDM688fm -->
+<!-- QMhIRcES5q5g3hO1zacLk4Jle7Tit+o7k3b/P8KbAgMBAAGjggEJMIIBBTAdBgNV -->
+<!-- HQ4EFgQUwXERlDy1mWY25uD9aDdPKmg8SnAwHwYDVR0jBBgwFoAUIzT42VJGcArt -->
+<!-- QPt2+7MrsMM1sw8wVAYDVR0fBE0wSzBJoEegRYZDaHR0cDovL2NybC5taWNyb3Nv -->
+<!-- ZnQuY29tL3BraS9jcmwvcHJvZHVjdHMvTWljcm9zb2Z0VGltZVN0YW1wUENBLmNy -->
+<!-- bDBYBggrBgEFBQcBAQRMMEowSAYIKwYBBQUHMAKGPGh0dHA6Ly93d3cubWljcm9z -->
+<!-- b2Z0LmNvbS9wa2kvY2VydHMvTWljcm9zb2Z0VGltZVN0YW1wUENBLmNydDATBgNV -->
+<!-- HSUEDDAKBggrBgEFBQcDCDANBgkqhkiG9w0BAQUFAAOCAQEAKZE9oQNZQfKTDuEj -->
+<!-- 5/P/waR7fW4GhXMMj3Vmfy7yKo+XiWASIu9psF2K0REvNtweGtdwlxTtqTSRTh8k -->
+<!-- whqdBiWUtHe5qRknWY1QDbrWLfUAPoNu6zAoqKV68Vm3SM+OhmHVAY3pSVIwNLZ0 -->
+<!-- lXfnbfvxYylx35GCZfqKkdyxJduX5btEwivGc7L0gTic2/i/RBZsLkI8QzsxNGfi -->
+<!-- QYqfXss+jOB5ptxe6s1wycy0vNteajEbB+OqRZRyw9I9Eq596xwYLe7vp/snFfVW -->
+<!-- l4NNeMRRGKKeCjP5Z3wePp90aBwbmdSO5S7ZXXv2HD/nbf3G2bV404j/kIKXQUAY -->
+<!-- idnHlDCCBfQwggPcoAMCAQICEzMAAAGGTSF1oNkHviwAAAAAAYYwDQYJKoZIhvcN -->
+<!-- AQELBQAwfjELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNV -->
+<!-- BAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEoMCYG -->
+<!-- A1UEAxMfTWljcm9zb2Z0IENvZGUgU2lnbmluZyBQQ0EgMjAxMTAeFw0yMDAzMDQx -->
+<!-- ODM5NDZaFw0yMTAzMDMxODM5NDZaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpX -->
+<!-- YXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQg -->
+<!-- Q29ycG9yYXRpb24xHjAcBgNVBAMTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjCCASIw -->
+<!-- DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALj17LJpqJ6Dddvt7D7+EDfiCrNG -->
+<!-- 5F5v2y8EXo3f6IsPkDSIx1226eeZsVVD6U1amF//E4Z5/m9cwwyTvji3Gj+RPoIq -->
+<!-- rQbNX4iECoPK2MfdSAaEsE1n9Ra5A+CueHBp9DdlyWxejWW2jinKmzj5fdHJB+fE -->
+<!-- LCq2NHGMJD4DAjOTS9JUWch3oDBsHvfDaUn4wL4TqdWbK+KSnsNPazBMXTkmR8xS -->
+<!-- 3MOiyS3P+m+8xZjUhQ5nvVepZRdzB/NYMn73pbEEfoukNDV8JDc84DeMIG7eYyIH -->
+<!-- WRKwyKEf56rUTMPQSzuIhPUyUoRE9CYL7GUr72k8DDqP6s/aC5h8qswWvf0CAwEA -->
+<!-- AaOCAXMwggFvMB8GA1UdJQQYMBYGCisGAQQBgjdMCAEGCCsGAQUFBwMDMB0GA1Ud -->
+<!-- DgQWBBSFMVMUe4JpQJ1OBleNr84BD3E6bjBFBgNVHREEPjA8pDowODEeMBwGA1UE -->
+<!-- CxMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMRYwFAYDVQQFEw0yMzAwMTIrNDU4Mzg0 -->
+<!-- MB8GA1UdIwQYMBaAFEhuZOVQBdOCqhc3NyK1bajKdQKVMFQGA1UdHwRNMEswSaBH -->
+<!-- oEWGQ2h0dHA6Ly93d3cubWljcm9zb2Z0LmNvbS9wa2lvcHMvY3JsL01pY0NvZFNp -->
+<!-- Z1BDQTIwMTFfMjAxMS0wNy0wOC5jcmwwYQYIKwYBBQUHAQEEVTBTMFEGCCsGAQUF -->
+<!-- BzAChkVodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtpb3BzL2NlcnRzL01pY0Nv -->
+<!-- ZFNpZ1BDQTIwMTFfMjAxMS0wNy0wOC5jcnQwDAYDVR0TAQH/BAIwADANBgkqhkiG -->
+<!-- 9w0BAQsFAAOCAgEAQOQtdYoO0nysuHd3tc/XFTWzoa3SMOp4egilO+exES30ywqu -->
+<!-- JUYp1VUZImjDUvP371sg2Y9mjtl0yE2FYZBCcQXvP/dzOHQws7TPjxzEKuMtyHQ/ -->
+<!-- azG+1xpPnssGYTL61uGVQHqLPvYpZq/G6E/nPEoQKG0unyAeSnn/VhM+W9FgWtmv -->
+<!-- +K6naPNz86jk3j+r7KE6xFPcom7rZ6RBRQ+w9TZtaxoX+FQ9b8vY7UV5x/7o44kt -->
+<!-- PZsdoDOv4QECfQoBSLB0z4BS9qwb2Qctf4hdeURm9+xcbPPEWVbM1ukz326ZZYxA -->
+<!-- 9MZk+lIJMMOz/UKLQGvb+hdyBrJgtpkJayPWb9rRXw4dkZumk/VGsF4tAp8BOO0C -->
+<!-- XTGuEyviSB+8nqe0KGD13HLgOIZaeyP/9DLBSzVTFVyFFHt4Vo/czz8FXR54yi1f -->
+<!-- BM0jDNJ3e4DMAj41Ks3mlWVB4LRddO554O7ENyHdLlRR0M692U52VEBr7zlKLoeY -->
+<!-- RSDHePRhhILVFYF0SHCwB0fqde1cSyEADF/w9aHbAKxzMx78Xi9ODhyYOwFNnDCs -->
+<!-- eovmStf76zrWwtYDrtifgNvqtdX0iZx/lQwKrT3AmPkf3cof2pzXIKInMMK1u2DI -->
+<!-- dhcCRIdA2miPu0NfqSj2ATy9epkgaPzabANMBj2h9EfRFIwsmqmAusE8Io0wggYH -->
+<!-- MIID76ADAgECAgphFmg0AAAAAAAcMA0GCSqGSIb3DQEBBQUAMF8xEzARBgoJkiaJ -->
+<!-- k/IsZAEZFgNjb20xGTAXBgoJkiaJk/IsZAEZFgltaWNyb3NvZnQxLTArBgNVBAMT -->
+<!-- JE1pY3Jvc29mdCBSb290IENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0wNzA0MDMx -->
+<!-- MjUzMDlaFw0yMTA0MDMxMzAzMDlaMHcxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpX -->
+<!-- YXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQg -->
+<!-- Q29ycG9yYXRpb24xITAfBgNVBAMTGE1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQTCC -->
+<!-- ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ+hbLHf20iSKnxrLhnhveLj -->
+<!-- xZlRI1Ctzt0YTiQP7tGn0UytdDAgEesH1VSVFUmUG0KSrphcMCbaAGvoe73siQcP -->
+<!-- 9w4EmPCJzB/LMySHnfL0Zxws/HvniB3q506jocEjU8qN+kXPCdBer9CwQgSi+aZs -->
+<!-- k2fXKNxGU7CG0OUoRi4nrIZPVVIM5AMs+2qQkDBuh/NZMJ36ftaXs+ghl3740hPz -->
+<!-- CLdTbVK0RZCfSABKR2YRJylmqJfk0waBSqL5hKcRRxQJgp+E7VV4/gGaHVAIhQAQ -->
+<!-- MEbtt94jRrvELVSfrx54QTF3zJvfO4OToWECtR0Nsfz3m7IBziJLVP/5BcPCIAsC -->
+<!-- AwEAAaOCAaswggGnMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFCM0+NlSRnAK -->
+<!-- 7UD7dvuzK7DDNbMPMAsGA1UdDwQEAwIBhjAQBgkrBgEEAYI3FQEEAwIBADCBmAYD -->
+<!-- VR0jBIGQMIGNgBQOrIJgQFYnl+UlE/wq4QpTlVnkpKFjpGEwXzETMBEGCgmSJomT -->
+<!-- 8ixkARkWA2NvbTEZMBcGCgmSJomT8ixkARkWCW1pY3Jvc29mdDEtMCsGA1UEAxMk -->
+<!-- TWljcm9zb2Z0IFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5ghB5rRahSqClrUxz -->
+<!-- WPQHEy5lMFAGA1UdHwRJMEcwRaBDoEGGP2h0dHA6Ly9jcmwubWljcm9zb2Z0LmNv -->
+<!-- bS9wa2kvY3JsL3Byb2R1Y3RzL21pY3Jvc29mdHJvb3RjZXJ0LmNybDBUBggrBgEF -->
+<!-- BQcBAQRIMEYwRAYIKwYBBQUHMAKGOGh0dHA6Ly93d3cubWljcm9zb2Z0LmNvbS9w -->
+<!-- a2kvY2VydHMvTWljcm9zb2Z0Um9vdENlcnQuY3J0MBMGA1UdJQQMMAoGCCsGAQUF -->
+<!-- BwMIMA0GCSqGSIb3DQEBBQUAA4ICAQAQl4rDXANENt3ptK132855UU0BsS50cVtt -->
+<!-- DBOrzr57j7gu1BKijG1iuFcCy04gE1CZ3XpA4le7r1iaHOEdAYasu3jyi9DsOwHu -->
+<!-- 4r6PCgXIjUji8FMV3U+rkuTnjWrVgMHmlPIGL4UD6ZEqJCJw+/b85HiZLg33B+Jw -->
+<!-- vBhOnY5rCnKVuKE5nGctxVEO6mJcPxaYiyA/4gcaMvnMMUp2MT0rcgvI6nA9/4UK -->
+<!-- E9/CCmGO8Ne4F+tOi3/FNSteo7/rvH0LQnvUU3Ih7jDKu3hlXFsBFwoUDtLaFJj1 -->
+<!-- PLlmWLMtL+f5hYbMUVbonXCUbKw5TNT2eb+qGHpiKe+imyk0BncaYsk9Hm0fgvAL -->
+<!-- xyy7z0Oz5fnsfbXjpKh0NbhOxXEjEiZ2CzxSjHFaRkMUvLOzsE1nyJ9C/4B5IYCe -->
+<!-- FTBm6EISXhrIniIh0EPpK+m79EjMLNTYMoBMJipIJF9a6lbvpt6Znco6b72BJ3QG -->
+<!-- Ee52Ib+bgsEnVLaxaj2JoXZhtG6hE6a/qkfwEm/9ijJssv7fUciMI8lmvZ0dhxJk -->
+<!-- Aj0tr1mPuOQh5bWwymO0eFQF1EEuUKyUsKV4q7OglnUa2ZKHE3UiLzKoCG6gW4wl -->
+<!-- v6DvhMoh1useT8ma7kng9wFlb4kLfchpyOZu6qeXzjEp/w7FW1zYTRuh2Povnj8u -->
+<!-- VRZryROj/TCCB3owggVioAMCAQICCmEOkNIAAAAAAAMwDQYJKoZIhvcNAQELBQAw -->
+<!-- gYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdS -->
+<!-- ZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xMjAwBgNVBAMT -->
+<!-- KU1pY3Jvc29mdCBSb290IENlcnRpZmljYXRlIEF1dGhvcml0eSAyMDExMB4XDTEx -->
+<!-- MDcwODIwNTkwOVoXDTI2MDcwODIxMDkwOVowfjELMAkGA1UEBhMCVVMxEzARBgNV -->
+<!-- BAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jv -->
+<!-- c29mdCBDb3Jwb3JhdGlvbjEoMCYGA1UEAxMfTWljcm9zb2Z0IENvZGUgU2lnbmlu -->
+<!-- ZyBQQ0EgMjAxMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAKvw+nIQ -->
+<!-- HC6t2G6qghBNNLrytlghn0IbKmvpWlCquAY4GgRJun/DDB7dN2vGEtgL8DjCmQaw -->
+<!-- yDnVARQxQtOJDXlkh36UYCRsr55JnOloXtLfm1OyCizDr9mpK656Ca/XllnKYBoF -->
+<!-- 6WZ26DJSJhIv56sIUM+zRLdd2MQuA3WraPPLbfM6XKEW9Ea64DhkrG5kNXimoGMP -->
+<!-- LdNAk/jj3gcN1Vx5pUkp5w2+oBN3vpQ97/vjK1oQH01WKKJ6cuASOrdJXtjt7UOR -->
+<!-- g9l7snuGG9k+sYxd6IlPhBryoS9Z5JA7La4zWMW3Pv4y07MDPbGyr5I4ftKdgCz1 -->
+<!-- TlaRITUlwzluZH9TupwPrRkjhMv0ugOGjfdf8NBSv4yUh7zAIXQlXxgotswnKDgl -->
+<!-- mDlKNs98sZKuHCOnqWbsYR9q4ShJnV+I4iVd0yFLPlLEtVc/JAPw0XpbL9Uj43Bd -->
+<!-- D1FGd7P4AOG8rAKCX9vAFbO9G9RVS+c5oQ/pI0m8GLhEfEXkwcNyeuBy5yTfv0aZ -->
+<!-- xe/CHFfbg43sTUkwp6uO3+xbn6/83bBm4sGXgXvt1u1L50kppxMopqd9Z4DmimJ4 -->
+<!-- X7IvhNdXnFy/dygo8e1twyiPLI9AN0/B4YVEicQJTMXUpUMvdJX3bvh4IFgsE11g -->
+<!-- lZo+TzOE2rCIF96eTvSWsLxGoGyY0uDWiIwLAgMBAAGjggHtMIIB6TAQBgkrBgEE -->
+<!-- AYI3FQEEAwIBADAdBgNVHQ4EFgQUSG5k5VAF04KqFzc3IrVtqMp1ApUwGQYJKwYB -->
+<!-- BAGCNxQCBAweCgBTAHUAYgBDAEEwCwYDVR0PBAQDAgGGMA8GA1UdEwEB/wQFMAMB -->
+<!-- Af8wHwYDVR0jBBgwFoAUci06AjGQQ7kUBU7h6qfHMdEjiTQwWgYDVR0fBFMwUTBP -->
+<!-- oE2gS4ZJaHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraS9jcmwvcHJvZHVjdHMv -->
+<!-- TWljUm9vQ2VyQXV0MjAxMV8yMDExXzAzXzIyLmNybDBeBggrBgEFBQcBAQRSMFAw -->
+<!-- TgYIKwYBBQUHMAKGQmh0dHA6Ly93d3cubWljcm9zb2Z0LmNvbS9wa2kvY2VydHMv -->
+<!-- TWljUm9vQ2VyQXV0MjAxMV8yMDExXzAzXzIyLmNydDCBnwYDVR0gBIGXMIGUMIGR -->
+<!-- BgkrBgEEAYI3LgMwgYMwPwYIKwYBBQUHAgEWM2h0dHA6Ly93d3cubWljcm9zb2Z0 -->
+<!-- LmNvbS9wa2lvcHMvZG9jcy9wcmltYXJ5Y3BzLmh0bTBABggrBgEFBQcCAjA0HjIg -->
+<!-- HQBMAGUAZwBhAGwAXwBwAG8AbABpAGMAeQBfAHMAdABhAHQAZQBtAGUAbgB0AC4g -->
+<!-- HTANBgkqhkiG9w0BAQsFAAOCAgEAZ/KGpZjgVHkaLtPYdGcimwuWEeFjkplCln3S -->
+<!-- eQyQwWVfLiw++MNy0W2D/r4/6ArKO79HqaPzadtjvyI1pZddZYSQfYtGUFXYDJJ8 -->
+<!-- 0hpLHPM8QotS0LD9a+M+By4pm+Y9G6XUtR13lDni6WTJRD14eiPzE32mkHSDjfTL -->
+<!-- JgJGKsKKELukqQUMm+1o+mgulaAqPyprWEljHwlpblqYluSD9MCP80Yr3vw70L01 -->
+<!-- 724lruWvJ+3Q3fMOr5kol5hNDj0L8giJ1h/DMhji8MUtzluetEk5CsYKwsatruWy -->
+<!-- 2dsViFFFWDgycScaf7H0J/jeLDogaZiyWYlobm+nt3TDQAUGpgEqKD6CPxNNZgvA -->
+<!-- s0314Y9/HG8VfUWnduVAKmWjw11SYobDHWM2l4bf2vP48hahmifhzaWX0O5dY0Hj -->
+<!-- Wwechz4GdwbRBrF1HxS+YWG18NzGGwS+30HHDiju3mUv7Jf2oVyW2ADWoUa9WfOX -->
+<!-- pQlLSBCZgB/QACnFsZulP0V3HjXG0qKin3p6IvpIlR+r+0cjgPWe+L9rt0uX4ut1 -->
+<!-- eBrs6jeZeRhL/9azI2h15q/6/IvrC4DqaTuv/DDtBEyO3991bWORPdGdVk5Pv4BX -->
+<!-- IqF4ETIheu9BCrE/+6jMpF3BoYibV3FWTkhFwELJm3ZbCoBIa/15n8G9bW1qyVJz -->
+<!-- Ew16UM0xggSOMIIEigIBATCBlTB+MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2Fz -->
+<!-- aGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENv -->
+<!-- cnBvcmF0aW9uMSgwJgYDVQQDEx9NaWNyb3NvZnQgQ29kZSBTaWduaW5nIFBDQSAy -->
+<!-- MDExAhMzAAABhk0hdaDZB74sAAAAAAGGMAkGBSsOAwIaBQCggaIwGQYJKoZIhvcN -->
+<!-- AQkDMQwGCisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEOMAwGCisGAQQBgjcCARUw -->
+<!-- IwYJKoZIhvcNAQkEMRYEFJjvn6nvNg6Lfe3tt08ibXnFNSuuMEIGCisGAQQBgjcC -->
+<!-- AQwxNDAyoBSAEgBNAGkAYwByAG8AcwBvAGYAdKEagBhodHRwOi8vd3d3Lm1pY3Jv -->
+<!-- c29mdC5jb20wDQYJKoZIhvcNAQEBBQAEggEAAfg3mrVbl8LZSP62tJic1VmWxGZk -->
+<!-- +IRkVs2o7OhQD9ii5dacWMzsgfRvC/E5tcXNudg1NpCfSBvhP8OZHzX1Hih6lUK1 -->
+<!-- JB8bTjzyBJ+vJvVmdy0kT+/+WpdKC6m6y3OwMUq+Dtq9zkgddocx4DisHPzU50dr -->
+<!-- t5XZLS8F6ex9btTXHvSv9dXQH8BvaVoqA5xXCFZbpJZT47QCLB93tlI5NGZ5twdK -->
+<!-- s/aVatGqsDO2i8ZIAgxgxcod3NyhxSgS2bakhL7R6UFGfttfH6jTdQrc1/bp5bwE -->
+<!-- 4XITFPnhz45gFqLI+yejaISVk+6gF7c0P4KvW+1RHOlSARAKFQpcZBrw1qGCAigw -->
+<!-- ggIkBgkqhkiG9w0BCQYxggIVMIICEQIBATCBjjB3MQswCQYDVQQGEwJVUzETMBEG -->
+<!-- A1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWlj -->
+<!-- cm9zb2Z0IENvcnBvcmF0aW9uMSEwHwYDVQQDExhNaWNyb3NvZnQgVGltZS1TdGFt -->
+<!-- cCBQQ0ECEzMAAAFIScJ8V/2ylakAAAAAAUgwCQYFKw4DAhoFAKBdMBgGCSqGSIb3 -->
+<!-- DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMDYwNzEyMzc0NFow -->
+<!-- IwYJKoZIhvcNAQkEMRYEFPuvH8jUWfMnEXElYCS7mZl/6z0jMA0GCSqGSIb3DQEB -->
+<!-- BQUABIIBAIp5RyhbhltH5qUPRoWEMFaLkCo9IRq9Ir3goK8LzE+XgIVYcwu1jfRM -->
+<!-- rs0wOKUvOzzo1K3xfJ3QoqMjye548ey994o1Ts0RZ92CGhyzq1myAO6Y4bRwpmT4 -->
+<!-- pBppmrCFuZFgnHG5LowTerm7Kwq2sA/cbbAZXgsXlayAAw9V9ni3kMhbShy0ersn -->
+<!-- 1CUDkTVQNxb8uREq44H324WXqtH5bpE7Foea+AsE9ba0RoF+CzXJbNHwob5wkvuN -->
+<!-- yC+tu0FetCh1uFwGUcahWxc+7aZIcT8LQ3UQfWf+dMV9vnjidEZpLlOIjbnKYS9L -->
+<!-- eRKkuxi5y3sjGrHZkmvWTWmz2TdswbE= -->
+<!-- SIG # End signature block -->
