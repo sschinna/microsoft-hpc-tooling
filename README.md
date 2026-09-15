@@ -1,5 +1,7 @@
 # Microsoft HPC Tooling — Setup, Prerequisites & Running Bash Jobs
 
+> 📚 **[Official Microsoft Documentation →](docs/MICROSOFT-DOCS.md)** — Full reference links for HPC Pack, CycleCloud, azurehpc, HPC VMs, and related Azure services.
+
 This workspace (`C:\Works`) contains a fully configured Microsoft HPC tooling stack for both **Windows** (PowerShell/CMD) and **Linux** (WSL2 Ubuntu/Bash). This guide covers prerequisites, environment setup, and how to run batch/bash jobs end-to-end.
 
 ---
